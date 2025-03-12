@@ -1,0 +1,38 @@
+{
+  "name": "dsm-water-polo-website",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "bun@1.2.4",
+  "scripts": {
+    "aframe": "bun node_modules/@aklinker1/aframe/bin/aframe.ts",
+    "dev": "bun --silent aframe",
+    "build": "bun --silent aframe build",
+    "preview": "bun --cwd .output --env-file ../.env server-entry.js"
+  },
+  "dependencies": {
+    "@aklinker1/aframe": "^0.3.0",
+    "@vueuse/core": "^13.0.0",
+    "elysia": "^1.2.25",
+    "es-toolkit": "^1.33.0",
+    "masonry-layout": "^4.2.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@aklinker1/check": "^1.4.5",
+    "@egoist/tailwindcss-icons": "^1.9.0",
+    "@iconify-json/heroicons": "^1.2.2",
+    "@prerenderer/prerenderer": "^1.2.5",
+    "@prerenderer/renderer-puppeteer": "^1.2.4",
+    "@tailwindcss/vite": "^4.0.13",
+    "@types/bun": "latest",
+    "@types/masonry-layout": "^4.2.8",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "oxlint": "^0.15.14",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.0.13",
+    "typescript": "^5",
+    "vite": "^6.2.1",
+    "vue-tsc": "^2.2.8"
+  }
+}
