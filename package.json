@@ -1,7 +1,6 @@
 {
   "name": "dsm-water-polo-website",
   "private": true,
-  "version": "1.0.0",
   "packageManager": "bun@1.2.4",
   "scripts": {
     "aframe": "bun node_modules/@aklinker1/aframe/bin/aframe.ts",
