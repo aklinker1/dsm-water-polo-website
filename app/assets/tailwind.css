@@ -80,6 +80,9 @@
     --btn-bg: var(--color-secondary);
     --btn-text: var(--color-secondary-content);
   }
+  .btn-square {
+    padding: calc(3 * var(--spacing));
+  }
 
   .nav-link {
     font-family: var(--font-poppins);

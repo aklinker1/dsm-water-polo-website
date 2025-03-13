@@ -65,7 +65,7 @@ const positionedImages = computed(() => {
   <HomeSection title="Photos" disable-padding>
     <div
       ref="photosContainer"
-      class="relative"
+      class="relative overflow-hidden"
       :style="{ height: `${positionedImages.maxY}px` }"
     >
       <img
@@ -82,11 +82,5 @@ const positionedImages = computed(() => {
         @load="loaded++"
       />
     </div>
-
-    <!-- TODO: Add dedicated photos page? -->
-    <!-- <RouterLink class="btn self-center" to="/photos">
-      <span>View All Photos</span>
-      <i class="i-heroicons-arrow-right -mr-2" />
-    </RouterLink> -->
   </HomeSection>
 </template>

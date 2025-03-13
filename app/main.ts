@@ -26,10 +26,6 @@ const router = createRouter({
           component: () => import("./pages/Contact.vue"),
         },
         {
-          path: "/photos",
-          component: () => import("./pages/Photos.vue"),
-        },
-        {
           path: "/:pathMatch(.*)*",
           component: () => import("./pages/NotFound.vue"),
         },
