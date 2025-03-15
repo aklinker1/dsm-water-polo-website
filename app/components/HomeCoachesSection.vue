@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import coachJames from "../assets/coach-james.png?format=webp&imagetools";
-import coachJoe from "../assets/coach-joe.png?format=webp&imagetools";
-import coachNick from "../assets/coach-nick.png?format=webp&imagetools";
+import coachJames from "../assets/coach-james.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
+import coachJoe from "../assets/coach-joe.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
+import coachNick from "../assets/coach-nick.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
 import HomeCoachListItem from "./HomeCoachListItem.vue";
 import HomeSection from "./HomeSection.vue";
 </script>

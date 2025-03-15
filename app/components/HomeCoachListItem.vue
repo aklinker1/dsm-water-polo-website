@@ -13,7 +13,7 @@ defineProps<{
     <p class="font-poppins font-light text-center opacity-50">{{ location }}</p>
     <img
       class="mt-2 aspect-square object-center object-cover rounded-md"
-      :src="src"
+      :srcset="src"
       :alt="alt"
     />
   </div>
