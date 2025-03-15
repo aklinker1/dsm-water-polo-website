@@ -9,7 +9,7 @@
     "preview": "bun --cwd .output --env-file ../.env server-entry.js"
   },
   "dependencies": {
-    "@aklinker1/aframe": "^0.3.0",
+    "@aklinker1/aframe": "^0.4.1",
     "@vueuse/core": "^13.0.0",
     "elysia": "^1.2.25",
     "es-toolkit": "^1.33.0",

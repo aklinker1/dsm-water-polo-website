@@ -23,4 +23,7 @@ export default defineConfig({
       }),
     ],
   },
+  prerenderer: {
+    waitForSelector: "body > *",
+  },
 });
