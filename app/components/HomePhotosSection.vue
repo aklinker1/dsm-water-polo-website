@@ -10,7 +10,7 @@ import {
 
 const images = Object.values(
   import.meta.glob<string>("../assets/home-photos/*", {
-    query: "?format=webp",
+    query: "?format=webp&w=500;900&as=srcset",
     eager: true,
     import: "default",
   }),
