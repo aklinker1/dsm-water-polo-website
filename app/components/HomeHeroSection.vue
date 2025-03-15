@@ -24,7 +24,6 @@ function onClickLearnMore() {
     <!-- Background -->
     <img
       :src="hero"
-      alt="Hero Image"
       class="absolute inset-0 w-full h-full object-center object-cover z-0 opacity-40 select-none"
     />
 

@@ -30,7 +30,6 @@ const positionedImages = computed(() => {
   const columnCount = isSmaller("md") ? 2 : isSmaller("lg") ? 3 : 4;
   const columnWidth = throttledWidth.value / columnCount;
   const columnY = Array.from<number>({ length: columnCount }).fill(0);
-  console.log(columnCount, columnWidth);
   let maxY = 0;
   return {
     get maxY() {
