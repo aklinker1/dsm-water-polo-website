@@ -7,7 +7,6 @@ import HomePhotosSection from "../components/HomePhotosSection.vue";
 
 <template>
   <HomeHeroSection
-    id="prerenderer-target"
     class="h-[95vh] pt-main-navigation"
     learn-more-target="about-us"
   />

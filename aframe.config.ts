@@ -23,9 +23,4 @@ export default defineConfig({
       }),
     ],
   },
-  prerenderer: {
-    rendererOptions: {
-      renderAfterElementExists: "#prerenderer-target",
-    },
-  },
 });

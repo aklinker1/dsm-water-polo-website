@@ -1,3 +1,3 @@
 <template>
-  <div id="prerenderer-target" class="pt-main-navigation">Events</div>
+  <div class="pt-main-navigation">Events</div>
 </template>
