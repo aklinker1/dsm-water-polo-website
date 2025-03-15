@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /practice
+Allow: /events
+Allow: /contacts
