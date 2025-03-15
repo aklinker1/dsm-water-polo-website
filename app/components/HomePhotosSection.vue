@@ -71,7 +71,7 @@ const positionedImages = computed(() => {
       <img
         v-for="(image, i) of positionedImages.images"
         :id="`photo-${i}`"
-        :src="image.src"
+        :srcset="image.src"
         class="absolute transition-all"
         :class="{
           'opacity-100': image.loaded,
