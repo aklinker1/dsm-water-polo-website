@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import hero from "../assets/hero2.png?format=webp";
+import hero from "../assets/hero.png?format=webp&imagetools";
 import { useRouter } from "vue-router";
 
 const props = defineProps<{
