@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HomeAboutUsListItem from "./HomeAboutUsListItem.vue";
-import poolAshworth from "../assets/pool-ashworth.jpg?format=webp&imagetools";
-import poolAmes from "../assets/pool-ames.jpg?format=webp&imagetools";
-import denverTeam from "../assets/denver-team.jpg?format=webp&imagetools";
-import youthClinic from "../assets/youth-clinic.jpg?format=webp&imagetools";
+import poolAshworth from "../assets/pool-ashworth.png?format=webp&imagetools";
+import poolAmes from "../assets/pool-ames.png?format=webp&imagetools";
+import denverTeam from "../assets/denver-team.png?format=webp&imagetools";
+import youthClinic from "../assets/youth-clinic.png?format=webp&imagetools";
 import HomeSection from "./HomeSection.vue";
 </script>
 
