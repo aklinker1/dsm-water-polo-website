@@ -4,7 +4,7 @@
     "": {
       "name": "my-app",
       "dependencies": {
-        "@aklinker1/aframe": "^0.4.3",
+        "@aklinker1/aframe": "^0.4.5",
         "@vueuse/core": "^13.0.0",
         "elysia": "^1.2.25",
         "es-toolkit": "^1.33.0",
@@ -35,7 +35,7 @@
     },
   },
   "packages": {
-    "@aklinker1/aframe": ["@aklinker1/aframe@0.4.3", "", { "peerDependencies": { "puppeteer": "*", "vite": "*" }, "bin": { "aframe": "bin/aframe.ts" } }, "sha512-wA53LPyQM9j1NcWk3VqLuWEowA1sE6qkTRhYn2x82fNZlAWA2BC0Fe26WBbrVY3qUtkDuvJA1HnPAwbPvqClFQ=="],
+    "@aklinker1/aframe": ["@aklinker1/aframe@0.4.5", "", { "peerDependencies": { "puppeteer": "*", "vite": "*" }, "bin": { "aframe": "bin/aframe.ts" } }, "sha512-4iQFYjR1EIGuFQLxzaFI122zvvTfh6lwAwpMBtj4Ni7sHxKIadmHrVojxXj0bGtguyw0R94NuQW5P7KWxxuelw=="],
 
     "@aklinker1/check": ["@aklinker1/check@1.4.5", "", { "dependencies": { "@antfu/utils": "^0.7.7", "ci-info": "^4.0.0", "citty": "^0.1.6" }, "peerDependencies": { "typescript": "^5.0.0" }, "bin": { "check": "bin/check.mjs" } }, "sha512-whVpnpSK4qa4/83q22JAmxwRAEj35qYs8eIH/tX1C6rKbiwx7EL6kQVmSAhCe1NYqzoIWyOgsISdDPyHjC+h2A=="],
 
