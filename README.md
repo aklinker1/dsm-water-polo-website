@@ -1,15 +1,43 @@
-# dsm-water-polo-website
+![Image](https://github.com/user-attachments/assets/23285380-8536-4a15-87dd-bb54d16c30db)
 
-To install dependencies:
+# DSM Water Polo Website
 
-```bash
-bun install
+## Contributing
+
+First, install [`bunv`](https://github.com/aklinker1/bunv). This will ensure your version of [Bun](https://bun.sh) matches the project's requirements:
+
+```sh
+curl -sL https://raw.githubusercontent.com/aklinker1/bunv/main/install.sh | sh
 ```
 
-To run:
+Then install dependencies:
 
-```bash
-bun run
+```sh
+bun i
 ```
 
-This project was created using `bun init` in bun v1.2.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+Duplicate and fill out the template `.env` file:
+
+```sh
+cp .env.template .env
+```
+
+And start up the app in dev mode!
+
+```sh
+bun dev
+```
+
+### Building For Production
+
+Build the app to the `.output` folder:
+
+```sh
+bun run build
+```
+
+Preview the production build:
+
+```sh
+bun preview
+```
