@@ -4,6 +4,8 @@ import coachJoe from "../assets/coach-joe.png?format=webp&w=200;300;400;500&as=s
 import coachNick from "../assets/coach-nick.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
 import HomeCoachListItem from "./HomeCoachListItem.vue";
 import HomeSection from "./HomeSection.vue";
+
+const coachAaron = "https://placehold.co/500x500";
 </script>
 
 <template>
@@ -26,6 +28,12 @@ import HomeSection from "./HomeSection.vue";
         location="Ames"
         :src="coachNick"
         alt="Coach Nick at talking to the team"
+      />
+      <HomeCoachListItem
+        name="Aaron Klinker"
+        location="Des Moines & Ames"
+        :src="coachAaron"
+        alt="TODO"
       />
     </div>
   </HomeSection>
