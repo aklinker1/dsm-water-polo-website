@@ -6,10 +6,10 @@
     <p class="text-lg">
       Have questions about practice, tournaments, or anything else?
       <br />
-      Send an email to
+      Send us an email at
       <a class="link" href="mailto:dsmwaterpolo@gmail.com"
         >dsmwaterpolo@gmail.com</a
-      >.
+      >!
     </p>
   </div>
 </template>
