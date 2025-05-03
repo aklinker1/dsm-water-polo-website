@@ -22,6 +22,10 @@ const router = createRouter({
           component: () => import("./pages/Events.vue"),
         },
         {
+          path: "/events/:slug",
+          component: () => import("./pages/EventDetails.vue"),
+        },
+        {
           path: "/contact",
           component: () => import("./pages/Contact.vue"),
         },
