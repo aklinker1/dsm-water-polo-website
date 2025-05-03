@@ -1,4 +1,4 @@
-import { defineComponent, h, type Component } from "vue";
+import type { Component } from "vue";
 import { ASHWORTH_POOL_LINK } from "../utils/constants";
 
 export type WebsiteEvent = {
@@ -24,7 +24,7 @@ export const EVENTS: WebsiteEvent[] = [
         and Des Moines will play in a 9-team tournament. Admission is free!
       </p>
     `,
-    date: "2025-01-05",
+    date: "2023-07-13",
     links: [
       {
         text: "Ashworth Swimming Pool",
