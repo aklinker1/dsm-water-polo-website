@@ -19,11 +19,16 @@ const router = createRouter({
         },
         {
           path: "/events",
-          component: () => import("./pages/Events.vue"),
-        },
-        {
-          path: "/events/:slug",
-          component: () => import("./pages/EventDetails.vue"),
+          children: [
+            {
+              path: "",
+              component: () => import("./pages/Events.vue"),
+            },
+            {
+              path: ":slug",
+              component: () => import("./pages/EventDetails.vue"),
+            },
+          ],
         },
         {
           path: "/contact",
