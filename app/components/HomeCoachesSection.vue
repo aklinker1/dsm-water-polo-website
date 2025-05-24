@@ -14,25 +14,25 @@ const coachAaron = "https://placehold.co/500x500";
       <HomeCoachListItem
         name="James Bakkie"
         location="Des Moines"
-        :src="coachJames"
+        :srcset="coachJames"
         alt="Coach James encouraging the team from the sidelines"
       />
       <HomeCoachListItem
         name="Joe Chapman"
         location="Des Moines"
-        :src="coachJoe"
+        :srcset="coachJoe"
         alt="Coach Joe at talking to the team"
       />
       <HomeCoachListItem
         name="Nick Klein"
         location="Ames"
-        :src="coachNick"
+        :srcset="coachNick"
         alt="Coach Nick looking good"
       />
       <HomeCoachListItem
         name="Aaron Klinker"
         location="Des Moines & Ames"
-        :src="coachAaron"
+        :srcset="coachAaron"
         alt="No picture of Aaron..."
       />
     </div>

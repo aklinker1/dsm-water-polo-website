@@ -2,7 +2,7 @@
 defineProps<{
   name: string;
   location: string;
-  src: string;
+  srcset: string;
   alt: string;
 }>();
 </script>
@@ -11,7 +11,7 @@ defineProps<{
   <div class="flex flex-col md:flex-1">
     <img
       class="mb-4 aspect-square object-center object-cover rounded-md"
-      :srcset="src"
+      :srcset="srcset"
       :alt="alt"
     />
     <p class="text-2xl font-poppins font-bold text-center">{{ name }}</p>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import HomeAboutUsListItem from "./HomeAboutUsListItem.vue";
-import poolAshworth from "../assets/pool-ashworth.png?format=webp&w=500&imagetools";
-import poolAmes from "../assets/pool-ames.png?format=webp&w=500&imagetools";
-import denverTeam from "../assets/denver-team.png?format=webp&w=500&imagetools";
-import youthClinic from "../assets/youth-clinic.png?format=webp&w=500&imagetools";
+import poolAshworth from "../assets/pool-ashworth.png?format=webp&w=500;900&as=srcset&imagetools";
+import poolAmes from "../assets/pool-ames.png?format=webp&w=500;900&as=srcset&imagetools";
+import denverTeam from "../assets/denver-team.png?format=webp&w=500;900&as=srcset&imagetools";
+import youthClinic from "../assets/youth-clinic.png?format=webp&w=500;900&as=srcset&imagetools";
 import HomeSection from "./HomeSection.vue";
 </script>
 
@@ -22,8 +22,8 @@ import HomeSection from "./HomeSection.vue";
     <template #default>
       <ul class="flex flex-col gap-8">
         <HomeAboutUsListItem
-          :image-src="poolAshworth"
-          image-alt="Ashworth outdoor pool in Des Moines"
+          :srcset="poolAshworth"
+          alt="Ashworth outdoor pool in Des Moines"
           title="Practice - Everyone is Welcome!"
         >
           <p>
@@ -39,8 +39,8 @@ import HomeSection from "./HomeSection.vue";
         </HomeAboutUsListItem>
         <HomeAboutUsListItem
           title="Multiple Locations"
-          :image-src="poolAmes"
-          image-alt="Ames High School Natatorium"
+          :srcset="poolAmes"
+          alt="Ames High School Natatorium"
         >
           <p>
             We have two teams: one based in <b>Des Moines</b>, the other in
@@ -49,8 +49,8 @@ import HomeSection from "./HomeSection.vue";
         </HomeAboutUsListItem>
         <HomeAboutUsListItem
           title="Tournaments & Travel"
-          :image-src="denverTeam"
-          image-alt="Team photo at a Denver tournament"
+          :srcset="denverTeam"
+          alt="Team photo at a Denver tournament"
         >
           <p>
             We go to several annual Midwest tournaments each year and even
@@ -60,8 +60,8 @@ import HomeSection from "./HomeSection.vue";
         </HomeAboutUsListItem>
         <HomeAboutUsListItem
           title="Youth Clinics"
-          :image-src="youthClinic"
-          image-alt="Youth clinic"
+          :srcset="youthClinic"
+          alt="Youth clinic"
         >
           <p>
             We host youth clinics for middle school and high school students to

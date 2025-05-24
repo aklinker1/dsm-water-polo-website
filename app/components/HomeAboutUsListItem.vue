@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 defineProps<{
   title: string;
-  imageSrc: string;
-  imageAlt: string;
+  srcset: string;
+  alt: string;
 }>();
 </script>
 
@@ -16,8 +16,8 @@ defineProps<{
     </div>
     <img
       class="w-full aspect-video object-cover object-center md:w-[unset] md:aspect-square md:h-full lg:aspect-[4/3]"
-      :src="imageSrc"
-      :alt="imageAlt"
+      :srcset="srcset"
+      :alt="alt"
     />
   </div>
 </template>
