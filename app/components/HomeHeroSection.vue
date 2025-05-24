@@ -26,6 +26,8 @@ function onClickLearnMore() {
       :srcset="hero"
       alt="Background image showing the team cap"
       class="absolute inset-0 w-full h-full object-center object-cover z-0 opacity-40 select-none"
+      fetchpriority="high"
+      decoding="async"
     />
 
     <!-- Text -->

@@ -19,6 +19,7 @@ defineProps<{
       :srcset="srcset"
       :alt="alt"
       loading="lazy"
+      decoding="async"
     />
   </li>
 </template>

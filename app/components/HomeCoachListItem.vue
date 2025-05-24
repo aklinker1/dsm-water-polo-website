@@ -14,6 +14,7 @@ defineProps<{
       :srcset="srcset"
       :alt="alt"
       loading="lazy"
+      decoding="async"
     />
     <p class="text-2xl font-poppins font-bold text-center">{{ name }}</p>
     <p class="font-poppins font-light text-center opacity-50">{{ location }}</p>
