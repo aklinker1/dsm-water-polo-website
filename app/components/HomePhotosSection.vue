@@ -9,8 +9,7 @@ import {
 } from "@vueuse/core";
 
 const images = Object.values(
-  import.meta.glob<string>("../assets/home-photos/*", {
-    query: "?format=webp&w=500;900&as=srcset",
+  import.meta.glob<string>("../assets/home-photos/*.ts", {
     eager: true,
     import: "default",
   }),
