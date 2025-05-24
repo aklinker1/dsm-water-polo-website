@@ -12,7 +12,7 @@ import EventListItem from "../components/EventListItem.vue";
     </h2>
 
     <ul>
-      <EventListItem v-for="event of EVENTS" :key="event.id" v-bind="event" />
+      <EventListItem v-for="event of EVENTS" :key="event.slug" v-bind="event" />
     </ul>
   </div>
 </template>
