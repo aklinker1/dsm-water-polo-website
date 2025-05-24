@@ -24,6 +24,7 @@ function onClickLearnMore() {
     <!-- Background -->
     <img
       :srcset="hero"
+      alt="Background image showing the team cap"
       class="absolute inset-0 w-full h-full object-center object-cover z-0 opacity-40 select-none"
     />
 
@@ -31,7 +32,11 @@ function onClickLearnMore() {
     <div
       class="relative z-1 flex flex-col items-center gap-8 mx-4 md:mx-16 md:pr-[30vw] md:items-start"
     >
-      <img class="w-40 md:hidden" src="../assets/emblem.svg" />
+      <img
+        class="w-40 md:hidden"
+        src="../assets/emblem.svg"
+        alt="Team emblem"
+      />
 
       <h1 class="text-center md:text-left leading-[3]">
         <span class="font-semibold font-poppins text-4xl">Welcome to</span>
