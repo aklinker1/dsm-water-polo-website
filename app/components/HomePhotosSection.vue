@@ -80,6 +80,8 @@ const positionedImages = computed(() => {
         :data-image="JSON.stringify(image)"
         :style="`top: ${image.top}px; left: ${image.left}px; width: ${image.width}px`"
         @load="loaded++"
+        loading="lazy"
+        decoding="async"
       />
     </div>
   </HomeSection>
