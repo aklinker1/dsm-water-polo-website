@@ -10,7 +10,6 @@ const route = useRoute();
 const event = computed(() =>
   EVENTS.find((event) => event.slug === route.params.slug),
 );
-console.log(event.value?.details);
 </script>
 
 <template>

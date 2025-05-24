@@ -27,9 +27,9 @@ import HomeSection from "./HomeSection.vue";
           title="Practice - Everyone is Welcome!"
         >
           <p>
-            If you’re interested in water polo, come to a practice to check us
-            out! We welcome new players of all ages, skill levels, and genders.
-            We’d love to meet you!
+            If you’re interested in playing water polo, come to practice and
+            check us out! We welcome new players of all ages, skill levels, and
+            genders. We’d love to meet you!
           </p>
           <p>
             <RouterLink class="link" to="/practice">
@@ -53,9 +53,9 @@ import HomeSection from "./HomeSection.vue";
           alt="Team photo at a Denver tournament"
         >
           <p>
-            We go to several annual Midwest tournaments each year and even
-            travel to larger USA Water Polo tournaments accross the country
-            every few years.
+            We go to several Midwest tournaments each year and even travel to
+            larger USA Water Polo tournaments accross the country every few
+            years.
           </p>
         </HomeAboutUsListItem>
         <HomeAboutUsListItem

@@ -20,7 +20,7 @@ export const EVENTS: WebsiteEvent[] = [
     heading: "38th Annual DSM Water Polo Tournament",
     description: `
       <p>
-        This year, teams from Madison, Kansas City, Chicagoland, Minneapolis,
+        Teams from Madison, Kansas City, Chicagoland, Minneapolis,
         and Des Moines will play in a 11-team tournament. Admission is free!
       </p>
     `,
@@ -38,7 +38,7 @@ export const EVENTS: WebsiteEvent[] = [
     heading: "37th Annual DSM Water Polo Tournament",
     description: `
       <p>
-        This year, teams from Madison, Kansas City, Chicagoland, Minneapolis,
+        Teams from Madison, Kansas City, Chicagoland, Minneapolis,
         and Des Moines will play in a 9-team tournament. Admission is free!
       </p>
     `,

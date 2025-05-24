@@ -53,7 +53,7 @@ import {
       </ul>
       <p>
         For practices at the YMCA, <i>you don't need a membership</i>. Just tell
-        the front desk you're there for water polo!
+        the front desk you're here for water polo!
       </p>
     </section>
 
