@@ -85,6 +85,7 @@ function closeMobileMenu() {
     <div class="flex-1 md:hidden" />
     <button
       class="md:hidden btn btn-base btn-square shrink-0"
+      aria-label="Open navigation menu"
       @click="openMobileMenu"
     >
       <i class="i-heroicons-bars-3" />
@@ -103,6 +104,7 @@ function closeMobileMenu() {
           <button
             class="btn btn-base btn-square shrink-0"
             @click="closeMobileMenu"
+            aria-label="Close navigation menu"
           >
             <i class="i-heroicons-x-mark" />
           </button>
