@@ -54,12 +54,15 @@ function onClickLearnMore() {
           class="btn shadow-2xl shadow-primary/50 shrink-0"
           to="/practice"
         >
-          <i class="i-heroicons-calendar-days -ml-2" />
-          <span>Come to Practice</span>
+          <span class="font-semibold">Join the Team</span>
+          <i class="i-heroicons-arrow-right-16-solid -mr-2" />
         </RouterLink>
-        <button class="btn btn-base shrink-0" @click="onClickLearnMore">
+        <button
+          class="btn btn-base shrink-0 text-base-content/90"
+          @click="onClickLearnMore"
+        >
           <span>Learn More</span>
-          <i class="i-heroicons-chevron-right -mr-2" />
+          <i class="i-heroicons-chevron-down-16-solid -mr-2" />
         </button>
       </div>
     </div>
