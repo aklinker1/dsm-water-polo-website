@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import coachJames from "../assets/coach-james.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
-import coachJoe from "../assets/coach-joe.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
-import coachNick from "../assets/coach-nick.png?format=webp&w=200;300;400;500&as=srcset&imagetools";
+import coachJames from "../assets/coach-james";
+import coachJoe from "../assets/coach-joe";
+import coachNick from "../assets/coach-nick";
 import HomeCoachListItem from "./HomeCoachListItem.vue";
 import HomeSection from "./HomeSection.vue";
 
-const coachAaron = "https://placehold.co/500x500";
+// const coachAaron = "https://placehold.co/500x500";
 </script>
 
 <template>
@@ -29,12 +29,12 @@ const coachAaron = "https://placehold.co/500x500";
         :srcset="coachNick"
         alt="Coach Nick looking good"
       />
-      <HomeCoachListItem
+      <!-- <HomeCoachListItem
         name="Aaron Klinker"
         location="Des Moines & Ames"
         :srcset="coachAaron"
         alt="No picture of Aaron..."
-      />
+      /> -->
     </div>
   </HomeSection>
 </template>

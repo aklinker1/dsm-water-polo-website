@@ -2,7 +2,7 @@
 import HomeHeroSection from "../components/HomeHeroSection.vue";
 import HomeAboutUsSection from "../components/HomeAboutUsSection.vue";
 import HomeCoachesSection from "../components/HomeCoachesSection.vue";
-import HomePhotosSection from "../components/HomePhotosSection.vue";
+// import HomePhotosSection from "../components/HomePhotosSection.vue";
 </script>
 
 <template>
@@ -12,5 +12,5 @@ import HomePhotosSection from "../components/HomePhotosSection.vue";
   />
   <HomeAboutUsSection id="about-us" />
   <HomeCoachesSection id="coaches" class="bg-neutral" />
-  <HomePhotosSection id="photos" />
+  <!-- <HomePhotosSection id="photos" /> -->
 </template>

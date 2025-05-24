@@ -41,3 +41,9 @@ Preview the production build:
 ```sh
 bun preview
 ```
+
+### Assets
+
+Images at multiple resolutions are exported from Figma: https://www.figma.com/design/t6yFK6WQ541J9KB6iYO5px/DSM-Water-Polo
+
+Ask Aaron to share the project with you.

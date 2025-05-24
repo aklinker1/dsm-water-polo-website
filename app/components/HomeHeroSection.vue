@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import hero from "../assets/hero.png?format=webp&imagetools";
+import hero from "../assets/hero";
 import { useRouter } from "vue-router";
 
 const props = defineProps<{
@@ -23,7 +23,7 @@ function onClickLearnMore() {
   <div class="relative flex items-center justify-center md:justify-start">
     <!-- Background -->
     <img
-      :src="hero"
+      :srcset="hero"
       class="absolute inset-0 w-full h-full object-center object-cover z-0 opacity-40 select-none"
     />
 
