@@ -16,6 +16,10 @@ import {
         Our practice calendar below contains up-to-date information about
         practice locations, times, and where to go once you arrive at the pools.
       </p>
+      <p>
+        Try to arrive 15 minutes early so you have time to change into your
+        swimsuit and meet the team!
+      </p>
       <iframe
         class="h-[100vh] max-h-[50vh] -mx-16 md:mx-0"
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=AGENDA&showCalendars=0&showTabs=0&showTitle=0&showNav=0&showDate=0&showTz=0&src=YWNnYWhwOGFrZTVvZWN0bzY1NGhyY3FuanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33"
