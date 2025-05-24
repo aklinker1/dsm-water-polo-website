@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import {
-  AMES_POOL_LINK,
-  WELLMARK_YMCA_LINK,
-  PRACTICE_CALENDAR_LINK,
-} from "../utils/constants";
+import { AMES_POOL_LINK, WELLMARK_YMCA_LINK } from "../utils/constants";
 </script>
 
 <template>
