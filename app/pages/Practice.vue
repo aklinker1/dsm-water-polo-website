@@ -58,7 +58,7 @@ import {
     </section>
 
     <section class="flex flex-col gap-4">
-      <h3 class="text-2xl font-bold font-poppins">What to bring:</h3>
+      <h3 class="text-2xl font-bold font-poppins">What to bring</h3>
 
       <ul class="list-disc ml-8">
         <li>
