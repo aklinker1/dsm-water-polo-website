@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import { AMES_POOL_LINK, WELLMARK_YMCA_LINK } from "../utils/constants";
+import {
+  AMES_POOL_LINK,
+  ASHWORTH_POOL_LINK,
+  WELLMARK_YMCA_LINK,
+} from "../utils/constants";
 </script>
 
 <template>
@@ -34,7 +38,7 @@ import { AMES_POOL_LINK, WELLMARK_YMCA_LINK } from "../utils/constants";
         </li>
         <li>
           In Des Moines at the
-          <a class="link" :href="WELLMARK_YMCA_LINK" target="_blank"
+          <a class="link" :href="ASHWORTH_POOL_LINK" target="_blank"
             >Ashworth Pool</a
           >
           (outdoor) during the summer
