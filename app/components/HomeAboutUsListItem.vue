@@ -18,6 +18,7 @@ defineProps<{
       class="w-full aspect-video object-cover object-center md:w-[unset] md:aspect-square md:h-full lg:aspect-[4/3]"
       :srcset="srcset"
       :alt="alt"
+      loading="lazy"
     />
   </li>
 </template>

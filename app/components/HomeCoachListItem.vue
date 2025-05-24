@@ -13,6 +13,7 @@ defineProps<{
       class="mb-4 aspect-square object-center object-cover rounded-md"
       :srcset="srcset"
       :alt="alt"
+      loading="lazy"
     />
     <p class="text-2xl font-poppins font-bold text-center">{{ name }}</p>
     <p class="font-poppins font-light text-center opacity-50">{{ location }}</p>
