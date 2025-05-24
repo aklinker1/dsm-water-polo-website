@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import HomeHeroSection from "../components/HomeHeroSection.vue";
 import HomeAboutUsSection from "../components/HomeAboutUsSection.vue";
 import HomeCoachesSection from "../components/HomeCoachesSection.vue";
-import HomeHeroSection from "../components/HomeHeroSection.vue";
 import HomePhotosSection from "../components/HomePhotosSection.vue";
 </script>
 
