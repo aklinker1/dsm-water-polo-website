@@ -32,7 +32,7 @@ const itemUrl = computed(() => `/events/${props.slug}`);
 <template>
   <li class="flex flex-col md:flex-row bg-neutral rounded overflow-hidden">
     <div
-      class="shrink-0 flex flex-col items-center p-8 bg-primary/10 text-primary"
+      class="shrink-0 flex flex-col items-center p-8 bg-primary/10 text-primary md:w-32"
     >
       <p class="font-bold line-clamp-1">{{ month }}</p>
       <p class="text-6xl font-extralight line-clamp-1">{{ day }}</p>

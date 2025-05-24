@@ -7,3 +7,6 @@ export const ASHWORTH_POOL_LINK = "https://maps.app.goo.gl/4pJakt2PzSqPUfeU8";
 
 export const FACEBOOK_PAGE_LINK = "https://www.facebook.com/dsmwaterpolo";
 export const INSTAGRAM_PROFILE_LINK = "https://www.instagram.com/dsmwaterpolo";
+
+export const PRACTICE_CALENDAR_LINK =
+  "https://calendar.google.com/calendar/embed?src=acgahp8ake5oecto654hrcqnjs%40group.calendar.google.com&ctz=America%2FChicago";
