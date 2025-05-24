@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
+  <li
     class="bg-neutral rounded-xl overflow-hidden md:flex md:flex-row-reverse md:h-56 ring-4 ring-primary/30"
   >
     <div class="flex flex-col gap-4 p-8 md:flex-1">
@@ -19,5 +19,5 @@ defineProps<{
       :srcset="srcset"
       :alt="alt"
     />
-  </div>
+  </li>
 </template>
