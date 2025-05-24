@@ -11,7 +11,7 @@ import EventListItem from "../components/EventListItem.vue";
       Events
     </h2>
 
-    <ul>
+    <ul class="flex flex-col gap-8">
       <EventListItem v-for="event of EVENTS" :key="event.slug" v-bind="event" />
     </ul>
   </div>
