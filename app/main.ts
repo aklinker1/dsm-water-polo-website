@@ -1,6 +1,9 @@
 import "./assets/tailwind.css";
 import { createApp } from "vue";
 import { createRouter, createWebHistory, RouterView } from "vue-router";
+import { waitForUmami } from "./utils/analytics";
+
+performance.mark("app-mounted-start");
 
 const router = createRouter({
   history: createWebHistory(),
@@ -50,3 +53,11 @@ const router = createRouter({
 });
 
 createApp(RouterView).use(router).mount(document.body);
+
+performance.mark("app-mounted-end");
+
+waitForUmami(() => {
+  umami.track("performance", {
+    interactive: performance.getEntriesByName("app-mounted-end")[0].startTime,
+  });
+});
