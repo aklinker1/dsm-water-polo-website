@@ -27,7 +27,7 @@ export const EVENTS: WebsiteEvent[] = [
     date: "2024/07/12",
     links: [
       {
-        text: "Ashworth Swimming Pool",
+        text: "Des Moines - Ashworth Swimming Pool",
         url: ASHWORTH_POOL_LINK,
         icon: "i-heroicons-map",
       },
@@ -45,7 +45,7 @@ export const EVENTS: WebsiteEvent[] = [
     date: "2023/07/14",
     links: [
       {
-        text: "Ashworth Swimming Pool",
+        text: "Des Moines - Ashworth Swimming Pool",
         url: ASHWORTH_POOL_LINK,
         icon: "i-heroicons-map",
       },
