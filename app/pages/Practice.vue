@@ -13,7 +13,7 @@ import {
     <section class="flex flex-col gap-4">
       <h3 class="text-2xl font-bold font-poppins">When & Where</h3>
       <p>
-        Our practice calendar below contains up-to-date information about
+        Our public events calendar below contains up-to-date information about
         practice locations, times, and where to go once you arrive at the pools.
       </p>
       <p>
