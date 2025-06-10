@@ -4,6 +4,8 @@ import {
   ASHWORTH_POOL_LINK,
   WELLMARK_YMCA_LINK,
 } from "../utils/constants";
+
+const defaultMode = window.innerWidth > 768 ? "MONTH" : "AGENDA";
 </script>
 
 <template>
@@ -13,8 +15,15 @@ import {
     <section class="flex flex-col gap-4">
       <h3 class="text-2xl font-bold font-poppins">When & Where</h3>
       <p>
-        Our public events calendar below contains up-to-date information about
-        practice locations, times, and where to go once you arrive at the pools.
+        Our
+        <a
+          class="link"
+          href="https://calendar.google.com/calendar/u/1?cid=YWNnYWhwOGFrZTVvZWN0bzY1NGhyY3FuanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+          target="_blank"
+          >public events calendar</a
+        >
+        below contains up-to-date information about practice locations, times,
+        and where to go once you arrive at the pools.
       </p>
       <p>
         Try to arrive 15 minutes early so you have time to change into your
@@ -22,7 +31,7 @@ import {
       </p>
       <iframe
         class="h-[100vh] max-h-[50vh] -mx-16 md:mx-0"
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=AGENDA&showCalendars=0&showTabs=0&showTitle=0&showNav=0&showDate=0&showTz=0&src=YWNnYWhwOGFrZTVvZWN0bzY1NGhyY3FuanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33"
+        :src="`https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=${defaultMode}&showCalendars=0&showTz=0&src=YWNnYWhwOGFrZTVvZWN0bzY1NGhyY3FuanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33`"
         scrolling="no"
       />
 
