@@ -4,7 +4,6 @@ import { useRoute } from "vue-router";
 import { EVENTS } from "../assets/events";
 import NotFound from "./NotFound.vue";
 import EventLinkList from "../components/EventLinkList.vue";
-import EventDetailsRenderer from "../components/EventDetailsRenderer";
 
 const route = useRoute();
 const event = computed(() =>
@@ -32,7 +31,9 @@ const event = computed(() =>
         ...event.links,
       ]"
     />
-    <div class="space-y-4" v-html="event.description" />
-    <EventDetailsRenderer v-if="event.details" :component="event.details" />
+    <div class="space-y-4">
+      <p>{{ event.description }}</p>
+      <component v-if="event.details" :is="event.details" />
+    </div>
   </div>
 </template>

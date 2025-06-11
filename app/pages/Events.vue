@@ -5,10 +5,13 @@ import EventListItem from "../components/EventListItem.vue";
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 const pastCutoff = new Date(Date.now() - WEEK);
 
-const futureEvents = EVENTS.filter(
+const nonDraftEvents = EVENTS.filter((event) => !event.draft);
+const futureEvents = nonDraftEvents.filter(
   (event) => new Date(event.date) >= pastCutoff,
 );
-const pastEvents = EVENTS.filter((event) => new Date(event.date) < pastCutoff);
+const pastEvents = nonDraftEvents.filter(
+  (event) => new Date(event.date) < pastCutoff,
+);
 </script>
 
 <template>
