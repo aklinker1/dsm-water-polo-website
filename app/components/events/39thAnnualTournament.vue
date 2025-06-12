@@ -17,7 +17,8 @@ import poolAshworth from "../../assets/pool-ashworth";
     <li>Hippos (Wisconsin)</li>
     <li>Clayton (St. Louis)</li>
     <li>Kansas City</li>
-    <li>and more!</li>
+    <li>Apostles (Chicago)</li>
+    <li>Club of Chicago</li>
   </ul>
   <h2 class="font-poppins font-medium text-lg text-primary">
     Registration Fees

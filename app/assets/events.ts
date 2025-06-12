@@ -23,7 +23,6 @@ export type WebsiteEvent = {
 export const EVENTS: WebsiteEvent[] = [
   {
     slug: "39th-annual-tournament",
-    draft: true,
     heading: "39th Annual DSM Water Polo Tournament",
     description:
       "The best (and only) outdoor tournament in the Midwest! Games start Friday night and go through Sunday afternoon.",
