@@ -12,7 +12,7 @@ import {
 
 <template>
   <div
-    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 border-t border-white/50 p-16"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 border-t border-white/50 p-8 md:p-16"
   >
     <div class="flex flex-col items-center md:items-start">
       <img class="w-24 mb-4" src="../assets/emblem.svg" alt="Team emblem" />

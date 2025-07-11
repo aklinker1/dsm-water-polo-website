@@ -9,15 +9,19 @@ export type WebsiteEvent = {
    * slug to access the URL directly.
    */
   draft?: boolean;
-  date: string;
+  date: Date;
+  endDate?: Date;
   heading: string;
   description: string;
   details?: Component;
-  links?: Array<{
-    text: string;
-    icon: string;
-    url?: string;
-  }>;
+  links?: WebsiteEventLink[];
+};
+
+export type WebsiteEventLink = {
+  text: string;
+  tooltip?: string;
+  icon: string;
+  url?: string;
 };
 
 export const EVENTS: WebsiteEvent[] = [
@@ -25,9 +29,10 @@ export const EVENTS: WebsiteEvent[] = [
     slug: "39th-annual-tournament",
     heading: "39th Annual DSM Water Polo Tournament",
     description:
-      "The best (and only) outdoor tournament in the Midwest! Games start Friday night and go through Sunday afternoon.",
+      "This annual tournament brings top teams from all across the Midwest to Des Moines.",
     details: _39thAnnualTournament,
-    date: "2025/07/11",
+    date: new Date("2025/7/12"),
+    endDate: new Date("2025/7/13"),
     links: [
       {
         text: "Des Moines • Ashworth Swimming Pool",
@@ -46,7 +51,8 @@ export const EVENTS: WebsiteEvent[] = [
     heading: "38th Annual DSM Water Polo Tournament",
     description:
       "Teams from Madison, Kansas City, Chicagoland, Minneapolis, and Des Moines will play in a 11-team tournament. Admission is free!",
-    date: "2024/07/12",
+    date: new Date("2024/7/12"),
+    endDate: new Date("2024/7/14"),
     links: [
       {
         text: "Des Moines • Ashworth Swimming Pool",
@@ -60,7 +66,8 @@ export const EVENTS: WebsiteEvent[] = [
     heading: "37th Annual DSM Water Polo Tournament",
     description:
       "Teams from Madison, Kansas City, Chicagoland, Minneapolis, and Des Moines will play in a 9-team tournament. Admission is free!",
-    date: "2023/07/14",
+    date: new Date("2023/7/14"),
+    endDate: new Date("2023/7/17"),
     links: [
       {
         text: "Des Moines • Ashworth Swimming Pool",

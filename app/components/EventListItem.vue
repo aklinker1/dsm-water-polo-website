@@ -2,31 +2,18 @@
 import { computed } from "vue";
 import type { WebsiteEvent } from "../assets/events";
 import EventLinkList from "./EventLinkList.vue";
+import { toMonthString, isInPast } from "../utils/time-utils";
+import { buildEventLinks } from "../utils/event-utils";
 
 const props = defineProps<WebsiteEvent>();
 
-const MONTHS = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-const date = computed(() => new Date(props.date));
-const day = computed(() => date.value.getDate().toString().padStart(2, "0"));
-const month = computed(() => MONTHS[date.value.getMonth()]);
-const year = computed(() => date.value.getFullYear());
-const isPast = computed(() => date.value.getTime() < Date.now());
+const day = computed(() => props.date.getDate().toString().padStart(2, "0"));
+const month = computed(() => toMonthString(props.date));
+const year = computed(() => props.date.getFullYear());
 
 const itemUrl = computed(() => `/events/${props.slug}`);
+
+const links = computed(() => buildEventLinks(props));
 </script>
 
 <template>
@@ -36,7 +23,7 @@ const itemUrl = computed(() => `/events/${props.slug}`);
     >
       <p class="font-bold line-clamp-1">{{ month }}</p>
       <p class="text-6xl font-extralight line-clamp-1">{{ day }}</p>
-      <p v-if="isPast" class="font-bold line-clamp-1">
+      <p v-if="isInPast(date)" class="font-bold line-clamp-1">
         {{ year }}
       </p>
     </div>

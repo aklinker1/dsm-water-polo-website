@@ -14,6 +14,7 @@ defineProps<{
         :class="{ link: link.url, 'text-base-content/70': !link.url }"
         :href="link.url"
         target="_blank"
+        :title="link.tooltip"
       >
         <i class="shrink-0 size-5" :class="link.icon" />
         <span class="line-clamp-1">{{ link.text }}</span>

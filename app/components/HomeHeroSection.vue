@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import hero from "../assets/hero";
 import { useRouter } from "vue-router";
+import EventListItem from "./EventListItem.vue";
+import useActiveEvent from "../composables/useActiveEvent";
 
 const props = defineProps<{
   learnMoreTarget: string;
@@ -17,6 +19,8 @@ function onClickLearnMore() {
     }, 500);
   }
 }
+
+const activeEvent = useActiveEvent();
 </script>
 
 <template>
@@ -32,7 +36,7 @@ function onClickLearnMore() {
 
     <!-- Text -->
     <div
-      class="relative z-1 flex flex-col items-center gap-8 mx-4 md:mx-16 md:pr-[30vw] md:items-start"
+      class="relative z-1 flex flex-col items-center py-32 gap-8 mx-4 md:mx-16 md:pr-[30vw] md:items-start"
     >
       <img
         class="w-40 md:hidden"
@@ -47,6 +51,12 @@ function onClickLearnMore() {
           >Des Moines Water Polo</span
         >
       </h1>
+
+      <EventListItem
+        v-if="activeEvent"
+        class="lg:max-w-[50vw]"
+        v-bind="activeEvent"
+      />
 
       <!-- CTA Buttons -->
       <div

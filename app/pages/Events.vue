@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { EVENTS } from "../assets/events";
 import EventListItem from "../components/EventListItem.vue";
+import ContentLayout from "../layouts/ContentLayout.vue";
 
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 const pastCutoff = new Date(Date.now() - WEEK);
@@ -15,9 +16,7 @@ const pastEvents = nonDraftEvents.filter(
 </script>
 
 <template>
-  <div class="mt-main-navigation p-16 flex flex-col gap-16 max-w-6xl mx-auto">
-    <h2 class="text-4xl font-poppins font-bold text-primary">Events</h2>
-
+  <ContentLayout title="Events">
     <ul class="flex flex-col gap-8">
       <EventListItem
         v-for="event of futureEvents"
@@ -37,5 +36,5 @@ const pastEvents = nonDraftEvents.filter(
         v-bind="event"
       />
     </ul>
-  </div>
+  </ContentLayout>
 </template>

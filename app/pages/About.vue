@@ -8,7 +8,7 @@ import HomePhotosSection from "../components/HomePhotosSection.vue";
 <template>
   <HomeHeroSection
     v-once
-    class="h-[95vh] pt-main-navigation"
+    class="min-h-[95vh] pt-main-navigation"
     learn-more-target="about-us"
   />
   <HomeAboutUsSection v-once id="about-us" />
