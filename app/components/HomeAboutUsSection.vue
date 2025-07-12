@@ -54,7 +54,7 @@ import HomeSection from "./HomeSection.vue";
         >
           <p>
             We go to several Midwest tournaments each year and even travel to
-            larger USA Water Polo tournaments accross the country every few
+            larger USA Water Polo tournaments across the country every few
             years.
           </p>
         </HomeAboutUsListItem>
