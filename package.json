@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aklinker1/aframe": "^0.5.0",
+    "@aklinker1/zeta": "npm:@jsr/aklinker1__zeta@0.2.9",
     "@vueuse/core": "^13.0.0",
     "elysia": "^1.2.25",
     "es-toolkit": "^1.33.0",
