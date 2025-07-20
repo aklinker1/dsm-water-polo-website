@@ -1,12 +1,14 @@
+<script setup lang="ts">
+import ContentLayout from "../layouts/ContentLayout.vue";
+</script>
+
 <template>
-  <div
-    class="mt-main-navigation h-[70vh] px-4 py-8 md:p-16 flex flex-col gap-8 max-w-6xl mx-auto"
-  >
-    <h2 class="text-4xl font-poppins font-bold text-primary">Contact Us</h2>
+  <ContentLayout class="h-[70vh]" title="Contact Us">
     <p>
       Have questions about practice, tournaments, or anything else? Contact us
       at:
     </p>
+
     <ul class="pl-8 flex flex-col gap-4">
       <li>
         <div class="flex items-center gap-2">
@@ -29,5 +31,5 @@
         </div>
       </li>
     </ul>
-  </div>
+  </ContentLayout>
 </template>

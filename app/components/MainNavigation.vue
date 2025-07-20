@@ -55,12 +55,12 @@ function closeMobileMenu() {
   >
     <p class="flex items-center gap-4">
       <img
-        class="h-12 hidden md:block"
+        class="shrink-0 h-12 block"
         src="../assets/emblem.svg"
         alt="Team emblem"
       />
       <RouterLink
-        class="font-bold font-poppins text-3xl hover:text-primary transition cursor-pointer shrink-0"
+        class="font-bold font-poppins text-3xl hover:text-primary transition cursor-pointer shrink line-clamp-1"
         to="/"
       >
         <span>Polo Bears</span>

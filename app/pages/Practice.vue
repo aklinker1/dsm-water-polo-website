@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ContentLayout from "../layouts/ContentLayout.vue";
 import {
   AMES_POOL_LINK,
   ASHWORTH_POOL_LINK,
@@ -9,9 +10,7 @@ const defaultMode = window.innerWidth > 768 ? "MONTH" : "AGENDA";
 </script>
 
 <template>
-  <div class="mt-main-navigation p-16 flex flex-col gap-16 max-w-6xl mx-auto">
-    <h2 class="text-4xl font-poppins font-bold text-primary">Practice</h2>
-
+  <ContentLayout title="Practice">
     <section class="flex flex-col gap-4">
       <h3 class="text-2xl font-bold font-poppins">When & Where</h3>
       <p>
@@ -30,7 +29,7 @@ const defaultMode = window.innerWidth > 768 ? "MONTH" : "AGENDA";
         swimsuit and meet the team!
       </p>
       <iframe
-        class="h-[100vh] max-h-[50vh] -mx-16 md:mx-0"
+        class="h-[100vh] max-h-[50vh] md:mx-0"
         :src="`https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&showPrint=0&mode=${defaultMode}&showCalendars=0&showTz=0&src=YWNnYWhwOGFrZTVvZWN0bzY1NGhyY3FuanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23C0CA33`"
         scrolling="no"
       />
@@ -80,7 +79,7 @@ const defaultMode = window.innerWidth > 768 ? "MONTH" : "AGENDA";
         Don't worry about bringing goggles, we don't use them in water polo!
       </p>
     </section>
-  </div>
+  </ContentLayout>
 </template>
 
 <style scoped>

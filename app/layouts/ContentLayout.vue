@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <div
-    class="mt-main-navigation px-4 py-8 md:p-16 flex flex-col gap-8 max-w-6xl mx-auto"
+    class="mt-main-navigation p-4 md:px-16 md:pt-12 md:pb-16 flex flex-col gap-8 max-w-6xl mx-auto"
   >
     <div>
       <div v-if="breadcrumb" class="flex items-center gap-2 pb-2">
