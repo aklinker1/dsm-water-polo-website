@@ -2,6 +2,7 @@
 import coachJames from "../assets/coach-james";
 import coachJoe from "../assets/coach-joe";
 import coachNick from "../assets/coach-nick";
+import coachAaron from "../assets/coach-aaron";
 import HomeCoachListItem from "./HomeCoachListItem.vue";
 import HomeSection from "./HomeSection.vue";
 
@@ -29,12 +30,12 @@ import HomeSection from "./HomeSection.vue";
         :srcset="coachNick"
         alt="Coach Nick looking good"
       />
-      <!-- <HomeCoachListItem
-        name="Aaron Klinker"
+      <HomeCoachListItem
+        name="Aaron"
         location="Des Moines & Ames"
         :srcset="coachAaron"
-        alt="No picture of Aaron..."
-      /> -->
+        alt="Aaron canoeing with his dog"
+      />
     </div>
   </HomeSection>
 </template>
