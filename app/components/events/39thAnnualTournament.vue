@@ -3,6 +3,18 @@ import poolAshworth from "../../assets/pool-ashworth";
 </script>
 
 <template>
+  <h2 class="font-poppins font-medium text-lg text-primary">Game Videos</h2>
+  <iframe
+    class="w-full aspect-video"
+    src="https://www.youtube.com/embed/videoseries?si=djgrrYJ_s8zDT4It&amp;list=PLa0sriLIxROF7lGsMmvS41TO_cDCEzhdj"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+
+  <h2 class="font-poppins font-medium text-lg text-primary">Schedule</h2>
   <p>
     Games will take place at the Ashworth Swimming Pool in Greenwood Park. The
     public is invited to watch games:
