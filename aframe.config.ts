@@ -5,6 +5,7 @@ import { imageMinifier } from "./plugins/image-minifier";
 
 export default defineConfig({
   prerenderedRoutes: ["/", "/contact", "/events", "/practice"],
+  proxyPaths: ["/api", "/scalar", "/openapi.json"],
   vite: {
     plugins: [vue(), tailwindcss(), imageMinifier()],
   },

@@ -1,11 +1,12 @@
-import { createApp } from "@aklinker1/zeta";
+import { createApp, NoResponse, NotFoundHttpError } from "@aklinker1/zeta";
 import { fetchStatic } from "@aklinker1/aframe/server";
+import { zodSchemaAdapter } from "@aklinker1/zeta/adapters/zod-schema-adapter";
 
 const loggerPlugin = createApp()
-  .onRequest(() => ({
+  .onGlobalRequest(() => ({
     startTime: performance.now(),
   }))
-  .afterResponse(({ route, method, set, path, startTime }) => {
+  .onGlobalAfterResponse(({ route, method, set, path, startTime }) => {
     console.log(
       JSON.stringify({
         route,
@@ -18,8 +19,33 @@ const loggerPlugin = createApp()
   })
   .export();
 
-const api = createApp({ prefix: "/api" }).get("/health", () => {});
+const api = createApp({
+  openApi: {
+    info: {
+      title: "DSM Water Polo API",
+      version: "0.1.1",
+      description: "test",
+    },
+  },
+  prefix: "/api",
+})
+  .get(
+    "/health",
+    {
+      description: "Health check endpoint. Just returns a 200 with no body.",
+      responses: NoResponse,
+    },
+    () => {},
+  )
+  .any("/**", () => {
+    throw new NotFoundHttpError("API endpoint not found");
+  });
 
-const app = createApp().use(loggerPlugin).use(api).mount(fetchStatic());
+const app = createApp({
+  schemaAdapter: zodSchemaAdapter,
+})
+  .use(loggerPlugin)
+  .use(api)
+  .mount(fetchStatic());
 
 export default app;
