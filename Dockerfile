@@ -1,4 +1,4 @@
-FROM oven/bun:1-alpine
+FROM oven/bun:1.3.1-alpine
 RUN apk update
 RUN apk add curl
 COPY .output .
