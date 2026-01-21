@@ -66,7 +66,7 @@ const activeEvent = useActiveEvent();
           class="btn shadow-2xl shadow-primary/50 shrink-0"
           to="/practice"
         >
-          <span class="font-semibold">Join the Team</span>
+          <span class="font-semibold">Come to Practice</span>
           <i class="i-heroicons-arrow-right-16-solid -mr-2" />
         </RouterLink>
         <button
