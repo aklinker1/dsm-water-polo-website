@@ -20,6 +20,7 @@ import { AMES_POOL_LINK, ASHWORTH_POOL_LINK } from "../../utils/constants";
       <li>
         Visit
         <a
+          class="link"
           href="http://www.usawaterpolo.org/"
           target="_blank"
           rel="noopener noreferrer"
@@ -100,7 +101,6 @@ import { AMES_POOL_LINK, ASHWORTH_POOL_LINK } from "../../utils/constants";
 
   <h3 class="font-poppins font-medium text-lg">Member Bike Ride</h3>
   <p class="text-base-content/50 text-sm font-bold">June TBD</p>
-  <p>June TBD</p>
 
   <h3 class="font-poppins font-medium text-lg">Team Banquet</h3>
   <p class="text-base-content/50 text-sm font-bold">
