@@ -1,4 +1,4 @@
-import type { Component } from "vue";
+import { defineAsyncComponent, type Component } from "vue";
 import { ASHWORTH_POOL_LINK } from "../utils/constants";
 import _39thAnnualTournament from "../components/events/39thAnnualTournament.vue";
 
@@ -25,6 +25,39 @@ export type WebsiteEventLink = {
 };
 
 export const EVENTS: WebsiteEvent[] = [
+  {
+    slug: "40th-annual-tournament",
+    heading: "40th Annual DSM Water Polo Tournament",
+    description:
+      "12-team tournament in the heart of the midwest celebrating it's 40th anniversary.",
+    details: defineAsyncComponent(
+      () => import("../components/events/40thAnnualTournament.vue"),
+    ),
+    date: new Date("2026/7/10"),
+    endDate: new Date("2026/7/12"),
+    links: [
+      {
+        text: "Des Moines • Ashworth Swimming Pool",
+        url: ASHWORTH_POOL_LINK,
+        icon: "i-heroicons-map",
+      },
+      {
+        text: "Schedule Coming Soon!",
+        // url: "https://docs.google.com/spreadsheets/d/1V63r5BCOX_LoDCBrVk0B9yAs7O4eLfpTC1x8oO0gIQY/edit?usp=sharing",
+        icon: "i-heroicons-trophy",
+      },
+    ],
+  },
+  {
+    slug: "2026-summer-program",
+    heading: "2026 Summer Program",
+    description: "We're moving outside for our summer practices!",
+    details: defineAsyncComponent(
+      () => import("../components/events/2026SummerProgram.vue"),
+    ),
+    date: new Date("2026/6/2"),
+    endDate: new Date("2026/8/8"),
+  },
   {
     slug: "39th-annual-tournament",
     heading: "39th Annual DSM Water Polo Tournament",
