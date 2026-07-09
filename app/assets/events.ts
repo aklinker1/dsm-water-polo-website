@@ -42,8 +42,8 @@ export const EVENTS: WebsiteEvent[] = [
         icon: "i-heroicons-map",
       },
       {
-        text: "Schedule Coming Soon!",
-        // url: "https://docs.google.com/spreadsheets/d/1V63r5BCOX_LoDCBrVk0B9yAs7O4eLfpTC1x8oO0gIQY/edit?usp=sharing",
+        text: "Schedule",
+        url: "https://docs.google.com/spreadsheets/d/14RCZK7x3ZC1c9BcOvUNn8EyZsnt_LOJmZJMn2bTrhuw/edit?usp=sharing",
         icon: "i-heroicons-trophy",
       },
     ],
