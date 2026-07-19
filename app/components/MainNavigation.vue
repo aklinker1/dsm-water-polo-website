@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import { useRoute } from "vue-router";
 import { computed, ref } from "vue";
 import { useWindowScroll, useWindowSize } from "@vueuse/core";

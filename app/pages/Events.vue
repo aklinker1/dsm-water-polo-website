@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import { EVENTS } from "../assets/events";
 import EventListItem from "../components/EventListItem.vue";
 import ContentLayout from "../layouts/ContentLayout.vue";

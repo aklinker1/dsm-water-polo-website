@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import HomeAboutUsListItem from "./HomeAboutUsListItem.vue";
 import poolAshworth from "../assets/pool-ashworth";
 import poolAmes from "../assets/pool-ames";

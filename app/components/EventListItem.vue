@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import { computed } from "vue";
 import type { WebsiteEvent } from "../assets/events";
 import EventLinkList from "./EventLinkList.vue";

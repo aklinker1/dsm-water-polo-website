@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import ContentLayout from "../layouts/ContentLayout.vue";
 import {
   AMES_POOL_LINK,

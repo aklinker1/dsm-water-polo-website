@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import poolAshworth from "../../assets/pool-ashworth";
 </script>
 

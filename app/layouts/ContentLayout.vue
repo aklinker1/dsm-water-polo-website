@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 defineProps<{
   title: string;
   breadcrumb?: {

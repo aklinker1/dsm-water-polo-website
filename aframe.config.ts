@@ -9,7 +9,7 @@ export default defineConfig({
   vite: {
     plugins: [vue(), tailwindcss(), imageMinifier()],
   },
-  prerenderer: {
+  prerender: {
     waitForSelector: "body > *",
   },
 });

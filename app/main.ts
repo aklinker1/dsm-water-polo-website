@@ -1,5 +1,5 @@
 import "./assets/tailwind.css";
-import { createApp } from "vue";
+import { createVaporApp, vaporInteropPlugin } from "vue";
 import { router } from "./router";
 import { waitForUmami } from "./utils/analytics";
 import App from "./App.vue";
@@ -8,7 +8,7 @@ import App from "./App.vue";
 
 performance.mark("app-mounted-start");
 
-createApp(App).use(router).mount(document.body);
+createVaporApp(App).use(vaporInteropPlugin).use(router).mount(document.body);
 
 performance.mark("app-mounted-end");
 

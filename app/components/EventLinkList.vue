@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import type { WebsiteEvent } from "../assets/events";
 
 defineProps<{

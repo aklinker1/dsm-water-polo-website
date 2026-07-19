@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import coachJames from "../assets/coach-james";
 import coachJoe from "../assets/coach-joe";
 import coachNick from "../assets/coach-nick";
