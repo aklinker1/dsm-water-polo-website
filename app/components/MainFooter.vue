@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import {
   AMES_LINK,
   AMES_POOL_LINK,

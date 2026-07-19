@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import HomeHeroSection from "../components/HomeHeroSection.vue";
 import HomeAboutUsSection from "../components/HomeAboutUsSection.vue";
 import HomeCoachesSection from "../components/HomeCoachesSection.vue";

@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import { EVENTS } from "../assets/events";

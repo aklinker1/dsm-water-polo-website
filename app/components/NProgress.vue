@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import { Transition } from "vue";
 import useLoadingProgress from "../composables/useLoadingProgress";
 

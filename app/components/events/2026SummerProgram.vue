@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import { AMES_POOL_LINK, ASHWORTH_POOL_LINK } from "../../utils/constants";
 </script>
 

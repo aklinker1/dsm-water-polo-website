@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import MainFooter from "../components/MainFooter.vue";
 import MainNavigation from "../components/MainNavigation.vue";
 </script>

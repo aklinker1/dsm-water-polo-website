@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script lang="ts" vapor>
 import hero from "../assets/hero";
 import { useRouter } from "vue-router";
 import EventListItem from "./EventListItem.vue";

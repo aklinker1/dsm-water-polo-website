@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script vapor lang="ts">
 import { isPrerendering } from "@aklinker1/aframe/app";
 import NProgress from "./components/NProgress.vue";
 </script>
